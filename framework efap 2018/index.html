@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Framework FCAV</title>
+		<link rel="icon" type="imagem/png" href="img/.png" />
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/complemento_ui.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	</head>
+	<body>
+		<noscript>
+			<center><p>Atenção! Esta aplicação só funciona com javascript.</p></center>
+		</noscript>		
+		
+		<div class="header-controllers">
+			<div class="col-md-8">Projeto - EFAP</div>
+			<div id="itens-controllers" class="col-md-4 text-right"></div>
+		</div>
+
+		<div class="card text-center">
+			<div class="row margem-custom" style="">
+				<div class="col-md-12">
+					<div id="elementos-controllers"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="margem-topo-1">
+			<div class="container main-controllers">
+				<div class="col-md-12 espaco-02 areadecodigo">
+					<div>
+						<ul id="recebedados" class="sortable"></ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="text-center">© 2018 Copyright: developed by moodle team</footer>
+
+		<!-- Modal exportar código-->
+		<div class="modal fade" id="exportarModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" data-backdrop="static">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel3">Exportar código</h4>
+					</div>
+					<div class="modal-body">
+						<textarea id="exportarCodigo" class="textarea"></textarea>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary">Copiar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal carregar código-->
+		<div class="modal fade" id="carregarModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" data-backdrop="static">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel2">Carregar código</h4>
+					</div>
+					<div class="modal-body">
+						<div id="carregaCodigo">
+							<textarea id="codigoCarregado" class="textarea"></textarea>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+						<button type="button" class="btn btn-primary" id="pegarCodigoCarregado" data-dismiss="modal">Carregar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal -->
+		<div class="modal fade" id="controlerModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="static">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">Controles</h4>
+					</div>
+					<div class="modal-body">
+						<div id="recebeControllers">
+							<div class="row">
+								<div class="col-md-12">
+									<form>
+										<div class="form-group">
+											<label for="texto">Texto</label>
+											<input type="text" class="form-control" id="texto">
+										</div>
+										<div class="checkbox">
+											<label>
+											<input type="checkbox"> select
+											</label>
+										</div>
+										<select class="form-control">
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+										</select>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Javascript -->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/controller.js"></script>
+		 <script>
+			$( function() {
+				$( ".sortable" ).sortable();
+				$( ".sortable" ).disableSelection();
+			} );
+		</script>
+		<script>
+
+		   	$(".card").on("swipe", {
+		     	swipeLeft:function(event, direction, distance, duration, fingerCount) {
+		          	$(".nav-tabs li.active").next('li').find('a').tab('show');
+		        },
+		     	swipeRight:function(event, direction, distance, duration, fingerCount) {
+		          	$(".nav-tabs li.active").prev('li').find('a').tab('show');
+		        },
+		  	});
+
+		</script>
+	</body>
+</html>

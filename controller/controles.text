@@ -1,0 +1,17 @@
+<div class="margem-topo-1">
+	<div class="col-md-2">
+		<button class="btn btn-default">Carregar</button>
+		<button class="btn btn-default">Salvar</button> 
+	</div>
+	<div class="col-md-8 text-center">
+		<button class="btn btn-default">All</button>
+		<button class="btn btn-default">Elemento 1</button>
+		<button class="btn btn-default">Elemento 2</button>
+		<button class="btn btn-default">Elemento 3</button>
+	</div>
+	<div class="col-md-2 text-right">
+		<button class="btn btn-default">Visualizar</button>
+		<button class="btn btn-default">Exportar</button>
+	</div>
+</div>
+

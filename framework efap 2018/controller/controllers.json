@@ -1,0 +1,39 @@
+[
+    [
+        {
+            "nome": "Exportar",
+            "icone": "<i class=\"fas fa-download\"></i>",
+            "id": "acao-exportar"
+        },
+        {
+            "nome": "Visualizar",
+            "icone": "<i class=\"fas fa-street-view\"></i>",
+            "id": "acao-visualizar"
+        },
+        {
+            "nome": "Salvar",
+            "icone": "<i class=\"far fa-save\"></i>",
+            "id": "acao-salvar"
+        },
+        {
+            "nome": "Carregar",
+            "icone": "<i class=\"fas fa-upload\"></i>",
+            "id": "acao-carregar"
+        }
+    ],
+    [
+        {
+            "nome": "All",
+            "item": ["nome1"],
+            "id": ["elemento1"],
+            "imagem": ["example.jpg"]
+        },
+        {
+            "nome": "dois",
+            "item": ["nome12", "nome12", "nome3", "nome4"],
+            "id": ["elemento1", "elemento2", "elemento3", "elemento4"],
+            "imagem": ["example.jpg", "img2.jpg", "img3.jpg", "img4.jpg"]
+        }
+    ]
+]
+

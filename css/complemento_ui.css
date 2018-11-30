@@ -1,0 +1,85 @@
+@import "https://fonts.googleapis.com/css?family=Satisfy";
+@import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css";
+@import "https://fonts.googleapis.com/css?family=Inconsolata";
+
+/* Complemento Jquery UI */
+
+/* Margem */
+.margem-topo-0{
+	margin-top: 0!important;
+}
+.margem-topo-1{
+	margin-top: 1em!important;
+}
+.margem-topo-05{
+	margin-top: .5em!important;
+}
+/* Cor */
+.color-principal{
+	background-color: #e0e0e0;
+}
+.color-alternativo{
+	background-color: #D71921;
+	color:#FFF;
+}
+/* Espaço */
+.espaco-01{
+	padding-top: 0!important;
+}
+.espaco-02{
+	padding: .2em!important;
+}
+
+/* Configurações */
+.demoHeaders {
+	margin-top: 2em;
+}
+#dialog-link {
+	padding: .4em 1em .4em 20px;
+	text-decoration: none;
+	position: relative;
+}
+#dialog-link span.ui-icon {
+	margin: 0 5px 0 0;
+	position: absolute;
+	left: .2em;
+	top: 50%;
+	margin-top: -8px;
+}
+#icons {
+	margin: 0;
+	padding: 0;
+}
+#icons li {
+	margin: 2px;
+	position: relative;
+	padding: 4px 0;
+	cursor: pointer;
+	float: left;
+	list-style: none;
+}
+#icons span.ui-icon {
+	float: left;
+	margin: 0 4px;
+}
+.fakewindowcontain .ui-widget-overlay {
+	position: absolute;
+}
+select {
+	width: 200px;
+}
+.controlgroup label{
+	padding: 0.45em;
+}
+.espaco-botao{
+	padding: .55em;
+}
+
+.nav-tabs .nav-link.active {
+    font-weight:bold;
+    background-color: transparent;
+    border-bottom:3px solid #dd0000;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+}
